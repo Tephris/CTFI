@@ -1,7 +1,7 @@
 # Copy Text From Image (CTFI)
 
 ## Description
-Copy Text From Image (CTFI) is a tool utilizing Tesseract OCR to recognize text within the area you selected on screen for Windows 10.
+Copy Text From Image (CTFI) is a Python tool utilizing Tesseract OCR to recognize text within the area you selected on screen for Windows 10.
 
 ## Installation
 Execute the following command from within the root directory to install the tool:\
@@ -26,7 +26,7 @@ The tool will then prompt you to select your desired language. Enter the number 
 
 To select an area on your screen, start at one corner of your desired area, press left-shift to begin selection, drag your mouse to the opposite corner of the area, and release left-shift.
 
-In the event that you want to execute the tool without the red selection indicator box, you can provide `-h` or `--hide` a command line argument to disable it. For example: `python ctfi.py -h`
+In the event that you want to execute the tool without the red selection indicator box, you can provide `-h` or `--hide` as a command line argument to disable it. For example: `python ctfi.py -h`
 
 ## Modification
 To enable copying of other languages, modify the list of tuples found at the top of `CopyTextFromImage/ctfi.py`. Specific instructions can be found as a comment within the file.
