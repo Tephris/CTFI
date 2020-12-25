@@ -12,7 +12,7 @@ from pynput import keyboard
 # Language codes must match the traineddata file names found in the Tesseract-OCR/tessdata/ folder
 languages = [
 	('Chinese Simplified', 'chi_sim'),
-	('Chinese Traditional', 'chi_sim'),
+	('Chinese Traditional', 'chi_tra'),
 	('English', 'eng'),
 	('Japanese', 'jpn'),
 	('Korean', 'kor')
