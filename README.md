@@ -9,12 +9,8 @@ Execute the following command from within the root directory to install the tool
 
 This will install all dependencies and also allows you to execute the tool via the command line with the command `ctfi`.
 
-Alternatively, you can install each dependency manually. Install the required modules with the following commands:\
-`pip install clipboard`\
-`pip install pytesseract`\
-`pip install Pillow`\
-`pip install pynput`\
-`pip install pywin32`
+Alternatively, you can install each dependency manually. Install the required modules with the following command:\
+`pip install clipboard pytesseract Pillow pynput pywin32`
 
 Tesseract OCR is included with this project for convenience. You can find information on it and download it yourself [here](https://github.com/tesseract-ocr/tesseract).
 
@@ -27,6 +23,8 @@ The tool will then prompt you to select your desired language. Enter the number 
 To select an area on your screen, start at one corner of your desired area, press left-shift to begin selection, drag your mouse to the opposite corner of the area, and release left-shift.
 
 In the event that you want to execute the tool without the red selection indicator box, you can provide `-h` or `--hide` as a command line argument to disable it. For example: `python ctfi.py -h`
+
+Note: Accuracy of character recognition is dependent on text size and background color. Recognition is best for standard font text with a size \>= 12 and a solid background color such as white or black. This tool converts the selected image to greyscale before attempting to detect characters to improve accuracy for backgrounds of other colors. However, the contrast between font color and background color may still be an issue.
 
 ## Modification
 To enable copying of other languages, modify the list of tuples found at the top of `CopyTextFromImage/ctfi.py`. Specific instructions can be found as a comment within the file.
